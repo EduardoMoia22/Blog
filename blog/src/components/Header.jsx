@@ -25,7 +25,7 @@ export function Header(){
               <motion.nav className='w-full h-2/4 bg-white opacity-100 flex items-center justify-center'>
                 <ul className='flex flex-col items-center gap-7'>
                   <motion.li whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.1 }} transition={{ duration: 0.12 }}>  
-                    <NavLink to="/home" className={isActive => "group"}>
+                    <NavLink to="/" className={isActive => "group"}>
                       <div className='flex items-center justify-start gap-2 w-28'>
                         <Heart size={24} color="#A8AFB9" weight="fill" className='group-focus:fill-primary'/>
                         <span className='text-lg font-medium text-black'>Home</span>

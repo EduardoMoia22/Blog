@@ -16,7 +16,7 @@ function App() {
         </Routes>
         <Header />
         <Routes>
-          <Route path="/home" element={<Home />}/>
+          <Route path="/" element={<Home />}/>
         </Routes>
       </Container>
     </BrowserRouter>
