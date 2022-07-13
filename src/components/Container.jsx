@@ -1,6 +1,6 @@
 export function Container(props){
   return(
-    <div className="w-[370px] max-w-[90%] mx-auto">
+    <div className="w-[414px] max-w-[414px] mx-auto">
       {props.children}
     </div>
   )
