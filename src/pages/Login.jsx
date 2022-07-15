@@ -1,11 +1,16 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import { Container } from "../components/Container"
 
 export function Login(){
-  
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+
   function handleSubmit(e){
     e.preventDefault()
-    console.log("oi")
+    console.log(email)
+    console.log(password)
   }
   
   return(
@@ -30,12 +35,16 @@ export function Login(){
               type="email" 
               placeholder="E-mail" 
               className="h-16 rounded-2xl shadow-sm shadow-slate-300 text-black pl-6 placeholder:font-semibold placeholder:text-base placeholder:text-light-gray"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             
             <input 
               type="password" 
               placeholder="Password" 
               className="h-16 rounded-2xl shadow-sm shadow-slate-300 text-black pl-6 placeholder:font-semibold placeholder:text-base placeholder:text-light-gray"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             
             <Link 
